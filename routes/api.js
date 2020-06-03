@@ -26,7 +26,6 @@ router.get('/getEmp/:empId', function(req, res, next) {
     where: { EmpId: data }, include : "department"
   })
   .then((findedUser) => { 
-    console.log(findedUser)
     res.status(200).json({
       success : findedUser
     })
