@@ -10,12 +10,12 @@ const location = models.location;
 /* GET users listing. */
 router.post('/postEmp', function(req, res, next) {
   const data = req.body;
-  employees.create({
-    email: data.email,
-    firstName: data.firstName,
-    lastName: data.lastName,
+  department.create({
     deptId: data.deptId,
-    locId: data.locId 
+    deptName: data.deptName,
+    deptCity: data.deptCity,
+    //deptId: data.deptId,
+    //locId: data.locId 
   })
 });
 
@@ -26,6 +26,7 @@ router.get('/getEmp/:empId', function(req, res, next) {
     where: { EmpId: data }, include : "department"
   })
   .then((findedUser) => { 
+
     res.status(200).json({
       success : findedUser
     })
