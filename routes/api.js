@@ -11,13 +11,24 @@ const location = models.location;
 router.post('/postEmp', function(req, res, next) {
   const data = req.body;
   employees.create({
-    EmpId: data.EmpId,
     email: data.email,
     firstName:data.firstName,
     lastName: data.lastName,
     deptId: data.deptId,
     locId: data.locId 
   })
+  .then((newCompany) => {
+    res.json({
+      success : newCompany.dataValues
+    })
+})
+  .catch((err) => {
+  res.json({
+    msg : "Emmployee insert error",
+    error : err
+  })
+})
+
 });
 
 router.get('/getEmp/:empId', function(req, res, next) {
