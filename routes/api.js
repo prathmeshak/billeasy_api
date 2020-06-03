@@ -10,12 +10,13 @@ const location = models.location;
 /* GET users listing. */
 router.post('/postEmp', function(req, res, next) {
   const data = req.body;
-  location.create({
-    locId: data.locId,
-    cityName:data.cityName,
-    //deptCity: data.deptCity,
-    //deptId: data.deptId,
-    //locId: data.locId 
+  employees.create({
+    EmpId: data.EmpId,
+    email: data.email,
+    firstName:data.firstName,
+    lastName: data.lastName,
+    deptId: data.deptId,
+    locId: data.locId 
   })
 });
 
