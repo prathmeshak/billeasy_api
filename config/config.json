@@ -1,26 +1,28 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "root",
-    "database": "postgres",
-    "port":"8081",
-    "host": "127.0.0.1",
+    "username": "droxceocjcggwi",
+    "password": "1809c97f96316f1c88ef8c6b8329ea0db4e559b899144525d973023bf6af7924",
+    "database": "dd6tqsa2cofs5l",
+    "port":"5432",
+    "host": "ec2-54-86-170-8.compute-1.amazonaws.com",
     "dialect": "postgres",
     "operatorsAliases": false
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "postgres",
-    "host": "127.0.0.1",
+    "username": "droxceocjcggwi",
+    "password": "1809c97f96316f1c88ef8c6b8329ea0db4e559b899144525d973023bf6af7924",
+    "database": "dd6tqsa2cofs5l",
+    "port":"5432",
+    "host": "ec2-54-86-170-8.compute-1.amazonaws.com",
     "dialect": "postgres",
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "postgres",
-    "host": "127.0.0.1",
+    "username": "droxceocjcggwi",
+    "password": "1809c97f96316f1c88ef8c6b8329ea0db4e559b899144525d973023bf6af7924",
+    "database": "dd6tqsa2cofs5l",
+    "port":"5432",
+    "host": "ec2-54-86-170-8.compute-1.amazonaws.com",
     "dialect": "postgres",
     "operatorsAliases": false
   }
