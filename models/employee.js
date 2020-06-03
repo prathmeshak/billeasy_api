@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   },{
     freezeTableName: true
   });
-  employees.associate = function(models) {
+  employees.associate = function(models) {          //association will help us to join the table as per relation.
     employees.belongsTo(models.department, {
       foreignKey: 'deptId',
       as: 'department'

@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     deptName: DataTypes.STRING,
     deptCity: DataTypes.STRING
   }, {
-    freezeTableName: true
+    freezeTableName: true       //It will not allow plurals.It will keep is as employee,department etc.
   });
   department.associate = function(models) {
     // associations can be defined here

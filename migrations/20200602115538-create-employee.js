@@ -7,7 +7,7 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER    //sequelize will work as a ORM tool.It will automatically join the table.
       },
       email: {
         type: Sequelize.STRING

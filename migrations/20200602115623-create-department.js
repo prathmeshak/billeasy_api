@@ -5,7 +5,7 @@ module.exports = {
       deptId: {
         allowNull: false,
         unique: true,
-        primaryKey: true,
+        primaryKey: true,  // It will work as a foreign key for employee table.
         type: Sequelize.INTEGER
       },
       deptName: {
